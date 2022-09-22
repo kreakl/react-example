@@ -24,6 +24,7 @@ function App() {
           return Object.values(item).join('').toLowerCase().includes(searchInput.toLowerCase());
         });
 //dd
+
   useEffect(() => {
     setCount(searchInput.length < 1 ? 0 : filtered.length);
     if (count) {
